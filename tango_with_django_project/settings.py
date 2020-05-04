@@ -31,7 +31,7 @@ SECRET_KEY = 'o6^nj!omt0ki$2f75cxcl!sc8mxvt6$r^q-#3l8h5@p+$xp)3z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['rangodemo2020.pythonanywhere.com']
 
 
 # Application definition
@@ -106,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator', 
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
         'OPTIONS': { 'min_length': 6, }
     },
 ]
@@ -133,11 +133,11 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [STATIC_DIR, ]
 
 
-MEDIA_ROOT = MEDIA_DIR 
+MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
 
 
-PASSWORD_HASHERS = [ 
+PASSWORD_HASHERS = [
     'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
     'django.contrib.auth.hashers.BCryptPasswordHasher',
     'django.contrib.auth.hashers.PBKDF2PasswordHasher',
